@@ -19,26 +19,49 @@ Once the project moves into development, the press release can be used as a touc
 ## Heading ##
   > Name the product in a way the reader (i.e. your target customers) will understand.
 
+  007 children's game // Shot, Sheild, Reload
+
 ## Sub-Heading ##
   > Describe who the market for the product is and what benefit they get. One sentence only underneath the title.
+
+  the target audience is people who enjoy games, the benefit they will get is a fun way to spend time and depending on the age range, relive childhood memories.
 
 ## Summary ##
   > Give a summary of the product and the benefit. Assume the reader will not read anything else so make this paragraph good.
 
+  Be the last man standing, a game is made up of multiple rounds, each round a player decides they adtion they will take.
+  the three actions are sheild, shot and reload. If you have ammo, you can attempt to shot to take a competitor out of the competition, otherwise, you can sheild to block a shot, or reload to gain additional ammo.
+
 ## Problem ##
   > Describe the problem your product solves.
+
+  if the user has a few moments of boredom or wants to relive a childhood memory
 
 ## Solution ##
   > Describe how your product elegantly solves the problem.
 
+  By providing a game that is engaging and nostalgic. 
+
 ## Quote from You ##
   > A quote from a spokesperson in your company.
+
+  "wish you were a secret agent? Join your friends, decide who is the bad guy and take them out."
 
 ## How to Get Started ##
   > Describe how easy it is to get started.
 
+  just connect to our website and join a room
+
 ## Customer Quote ##
   > Provide a quote from a hypothetical customer that describes how they experienced the benefit.
 
+  "Great game, I remember playing this game with my friends on long summer afternoons"
+
 ## Closing and Call to Action ##
   > Wrap it up and give pointers where the reader should go next.
+
+  this website has some information on the game http://folklore.usc.edu/?p=25474
+
+
+
+
