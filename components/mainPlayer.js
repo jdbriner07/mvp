@@ -9,7 +9,12 @@
 angular.module('007')
 .directive('mainPlayer', function() {
 	return {
-		scope: {},
+		scope: {
+			reload: '<',
+			ammo: '<',
+			shield: '<',
+			shot: '<'
+		},
 		restrict: 'E',
 		replace: true,
 		controllerAs: 'ctrl',
@@ -17,31 +22,27 @@ angular.module('007')
 		controller: ['$scope', function($scope) {
 			// $scope.ctrl.alive = true; think these are obsolete
 			// $scope.ctrl.shielded = false;
-			$scope.ctrl.ammo = 1;
-			$scope.ctrl.reload = function() {
-				$.post('/reload', function(data) {
-					//need to recieve ammo count from the server and update variable
-					console.log(data);
-				})
-				//$scope.ctrl.ammo++;
-			};
-			$scope.ctrl.shield = function(){
-				$.post('/shield', function(data) {
-					console.log(data);
-				})
-				//$scope.ctrl.Shielded = true;
-			};
-			$scope.ctrl.unShield = function(){
-
-				//$scope.ctrl.Shielded = false;
-			};
+			// $scope.ctrl.reload = $scope.reload.bind($scope);
+			// $scope.ctrl.reload = function() {
+			// 	$.post('/reload', function(data) {
+			// 		//need to recieve ammo count from the server and update variable
+			// 		$scope.ctrl.ammo = data[0].ammo;
+			// 		console.log(data);
+			// 	})
+			// 	//$scope.ctrl.ammo++;
+			// };
+			// $scope.ctrl.shield = function(){
+			// 	$.post('/shield', function(data) {
+			// 	})
+			// 	//$scope.ctrl.Shielded = true;
+			// };
 		}],
 		template: `
 	<div>
 	<p>ammo: {{ctrl.ammo}}</p>
 	<ul> 
       <h2>actions</h2>
-        <li href='#'>Shoot</li>
+        <li ng-click="ctrl.shot()">Shoot</li>
         <li ng-click="ctrl.shield()">Shield</li>
         <li ng-click="ctrl.reload()">Reload</li>
     </ul>
