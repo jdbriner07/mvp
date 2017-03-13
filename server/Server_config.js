@@ -3,7 +3,8 @@ var path = require('path');
 
 var Player = require('./models/players');
 var Computer = require('./models/computer');
-var helper = require('./helpers')
+var helper = require('./helpers');
+var WLRatio = require('../db/models/winLoseRatio');
 
 var app = express();
 
@@ -13,6 +14,14 @@ app.use(express.static(path.join(__dirname, '../node_modules')));
 
 var mainPlayer = new Player();
 var computer = new Computer();
+var newWLRatio = new WLRatio({
+			wins: 0,
+			loses: 0,
+			id: 1
+		});
+		newWLRatio.save(function(err, ratio) {
+			console.log(err, ratio);
+		});
 
 app.get('/', function(req, res) {
 	helper.newGame(mainPlayer, computer);
